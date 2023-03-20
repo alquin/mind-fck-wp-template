@@ -26,3 +26,18 @@ function include_js()
         
 }
 add_action('wp_enqueue_scripts', 'include_js');
+
+add_theme_support('menus');
+add_theme_support('post-thumbnails');
+add_theme_support('widgets');
+
+
+register_nav_menus( 
+    array(
+    'top-menu' => __('Top Menu', 'theme'),
+    'footer-menu' => __('Footer Menu', 'theme'),
+
+) );
+
+add_image_size('smallest', 300, 300, true);
+add_image_size('largest', 800, 800, true);

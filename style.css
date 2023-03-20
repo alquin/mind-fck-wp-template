@@ -2,3 +2,14 @@
 Theme Name: Mind FCK
 Author: Alquin Eledana
 */
+body{
+    background-color: #d6d3d3;
+}
+header{
+    background-color: #d6d3d3;
+    text-align: center;
+    padding: 10px;
+}
+header .sticky-top{
+    background-color: #fff;
+}
